@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let physics;
+    let chemistry;
+    let biology;
+    physics=prompt("Input Physics Score");
+    chemistry=prompt("Input Chemistry Score");
+    biology=prompt("Input Biology Score");
+    biology =parseFloat(biology);
+    physics =parseFloat(physics);
+    chemistry =parseFloat(chemistry);
+    let sum=(physics+chemistry+biology);
+    let average=(sum)/3;
+    document.write("sum is"+sum);
+    document.write("<br/>");
+    document.write("average is"+average);
+</script>
+</body>
+</html>
