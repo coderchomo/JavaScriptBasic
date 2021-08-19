@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="month" type="number">
+    <button onclick="tinhngay()">Tinh so ngay</button>
+    <script>
+        function tinhngay() {
+            let thang = document.getElementById("month").value;
+            thang = parseInt(thang);
+            switch (thang) {
+                case 2:
+                    alert("Thang 2 co 28 hoac 29 ngay");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    alert("thang co 30 ngay");
+                    break;
+                default:
+                    alert("thang co 31 ngay");
+                    break;
+            }
+        }
+    </script>
+</form>
+</body>
+</html>
