@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="chiu()">
+<img id="nobita" src="https://image.lag.vn/upload/news/16/10/28/do5_ERAY.jpg"
+     style="position:absolute;left:0;top:0;height:300px;width:555px">
+<script>
+    function downPress(){
+        let anything=document.getElementById("nobita");
+        anything.style.top=parseInt(anything.style.top)+10+"px";
+    }
+    function upPress(){
+        let anything=document.getElementById("nobita");
+        anything.style.top=parseInt(anything.style.top)-10+"px";
+    }function leftPress(){
+        let anything=document.getElementById("nobita");
+        anything.style.left=parseInt(anything.style.left)-10+"px";
+    }function rightPress(){
+        let anything=document.getElementById("nobita");
+        anything.style.left=parseInt(anything.style.left)+10+"px";
+    }
+    function brasil(a) {
+        switch (a.keyCode) {
+            case 37:
+                leftPress();
+                break;
+            case 39:
+                rightPress();
+                break;
+            case 38:
+                upPress();
+                break;
+            case 40:
+                downPress();
+                break;
+        }
+    }
+        function chiu(){
+            window.addEventListener('keydown',brasil);
+        }
+</script>
+</body>
+</html>

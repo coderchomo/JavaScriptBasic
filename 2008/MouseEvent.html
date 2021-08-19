@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <img id="bornie" src="https://image.lag.vn/upload/news/16/10/28/do2_UGGH.jpg" />
+  <p>Click button below to move the image to right</p>
+  <input type="button" value="Click Me" onclick="moveright()" />
+    <script>
+        window.onload=clyde;
+        let picture=null;
+        picture=docment.getElementById("bornie");
+        function clyde(){
+            picture=document.getElementById("bornie");
+            picture.style.position='relative';
+            picture.style.left='0px';
+        }
+        function moveright(){
+            picture.style.left=parseInt(picture.style.left)+10+'px';
+        }
+    </script>
+</form>
+</body>
+</html>
