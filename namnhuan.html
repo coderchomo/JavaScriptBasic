@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let year= prompt("Input Year");
+year=parseInt(year);
+if(year%4==0){
+    if(year%100 ==0){
+        if(year%400 ==0){
+            alert("Ohhh year nam nhuan");
+        }else{
+            alert("dammnnn khong phai nam nhuan");
+        }
+    }else{
+        alert("oh year nam nhuan");
+    }
+}else{
+    alert("khong phai nam nhuan");
+}
+</script>
+</body>
+</html>
