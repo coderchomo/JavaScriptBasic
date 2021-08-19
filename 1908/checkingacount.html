@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name=prompt("Tell me what your name?")
+    if(name=="Admin"){
+        let pass=prompt("Show me your password");
+        if(pass=="TheMaster"){
+            alert("WELCOME,SUPER DUPER BOSS");
+        }else{
+            if (pass===""){
+            pass=null}
+            if(pass==null){
+                alert("Canceled,u are not my boss");
+            }else{
+                alert("Shame on you,wrong password");
+            }
+        }
+    }else{
+         if(name===""){
+        name=null}
+        if (name==null){
+            alert("Canceled,who are you again?");
+        }else{
+            alert("I don't know who da fak are you");
+        }
+    }
+</script>
+</body>
+</html>
