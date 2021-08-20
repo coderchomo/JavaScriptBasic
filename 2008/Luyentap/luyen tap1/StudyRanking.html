@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let week=prompt("Week1");
+    week=parseFloat(week);
+    // let week2=prompt("Week2");
+    // week2=parseFloat(week2);
+    // let week3=prompt("Week3");
+    // week3=parseFloat("week3")
+    // let week4=prompt("Week4");
+    // week4=parseFloat(week4);
+    let mid=prompt("Diem giua ky");
+    mid=parseFloat(mid);
+    let end=prompt("Diem cuoi ky");
+    end=parseFloat(end);
+    let a=(week+mid+end)/3;
+    if(a>0&&a<=10){
+        if(a<7){
+            if(a<5){
+                alert("Yeu");
+            }else{
+                alert("Trung binh");
+            }
+        }else{
+            if(a<9){
+                alert("Kha");
+            }else{
+                alert("Gioi");
+            }
+        }
+    }else{
+        alert("Some thing wrong in your score(Not our fall)");
+    }
+</script>
+</body>
+</html>

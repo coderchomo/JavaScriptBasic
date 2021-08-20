@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kwh=prompt("Gia dinh ban da dung bao nhieu Kilowat?");
+    kwh=parseFloat(kwh);
+    if(kwh>=0){
+        if(kwh>200){
+            if(kwh>300){
+               if(kwh>400){
+                   alert("So tien phai tra la(don vi VND):"+(kwh*2587));
+               } else{
+                   alert("So tien phai tra la(don vi VND):"+(kwh*2503));
+               }
+            }else{
+                alert("So tien phai tra la(don vi VND):"+(kwh*2242));
+            }
+        }else{
+            if(kwh>100){
+                alert("So tien phai tra la(don vi VND):"+(kwh*1786));
+            }else{
+                if(kwh>50){
+                    alert("So tien phai tra la(don vi VND):"+(kwh*1533));
+                }else{
+                    alert("So tien phai tra la(don vi VND):"+(kwh*1484));
+                }
+            }
+        }
+    }else{
+        alert("Khong hop le");
+    }
+</script>
+</body>
+</html>
