@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sal=prompt("Nhap thu nhap tinh thue");
+    sal=parseInt(sal);
+    if(sal>32000000){
+        if(sal>80000000){
+            alert("So thue TNCN phai tra la :"+((sal*35/100)-9850000));
+        }else{
+            if(sal>52000000){
+            alert("So thue TNCN phai tra la :"+((sal*30/100)-5850000));
+            }else{
+            alert("So thue TNCN phai tra la :"+((sal*25/100)-3250000));
+            }
+        }
+    }else{
+        if(sal>18000000){
+        alert("So thue TNCN phai tra la :"+((sal*20/100)-1650000));
+        }else{
+            if(sal>10000000){
+            alert("So thue TNCN phai tra la :"+((sal*15/100)-750000));
+            }else{
+                if(sal>5000000){
+                alert("So thue TNCN phai tra la :"+((sal*10/100)-250000));
+                }else{
+                alert("So thue TNCN phai tra la :"+(sal*5/100));
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

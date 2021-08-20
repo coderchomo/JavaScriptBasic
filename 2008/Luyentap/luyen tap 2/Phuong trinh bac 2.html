@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=prompt("nhap a");
+  a=parseFloat(a);
+  let b=prompt("nhap b");
+  b=parseFloat(b);
+  let c=prompt("Nhap c");
+  c=parseFloat(c);
+  if (a==0){
+      if(b==0){
+          if(c==0){
+              alert("Phuong trinh vo so nghiem");
+          }else{
+              alert("Phuong trinh vo nghiem");
+          }
+      }else{
+          if(c==0){
+          alert("Phuong trinh co nghiem bang 0")
+      }else{
+              alert("Nghiem la "+((-c)/b));
+          }
+          }
+  }else{
+      d=(b**2)-4*a*c;
+      r=Math.sqrt(d);
+      e=-(b/(2*a));
+      f=((-b)+r)/(a*2);
+      g=((-b)-r)/(a*2);
+      d==0?alert("Phuong trinh co nghiem kep x1=x2="+e):
+          d<0?alert("Phuong trinh vo nghiem"):alert("Phuong trinh co 2 nghiem x1 la"+f+"va x2 la"+g);
+  }
+</script>
+</body>
+</html>
