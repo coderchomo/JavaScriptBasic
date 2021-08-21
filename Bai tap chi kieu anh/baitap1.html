@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let somoi=prompt("Nhap so dien thang nay");
+  somoi=parseFloat(somoi);
+  let socu=prompt("Nhap so dien thang truoc");
+  socu=parseFloat(socu);
+let kwh=somoi-socu;
+  if(kwh>=0){
+    if(kwh>200){
+      if(kwh>300){
+        if(kwh>400){
+          alert("So tien phai tra la(don vi VND):"+(kwh*2927));
+        } else{
+          alert("So tien phai tra la(don vi VND):"+(kwh*2834));
+        }
+      }else{
+        alert("So tien phai tra la(don vi VND):"+(kwh*2536));
+      }
+    }else{
+      if(kwh>100){
+        alert("So tien phai tra la(don vi VND):"+(kwh*2014));
+      }else{
+        if(kwh>50){
+          alert("So tien phai tra la(don vi VND):"+(kwh*1734));
+        }else{
+          alert("So tien phai tra la(don vi VND):"+(kwh*1678));
+        }
+      }
+    }
+  }else{
+    alert("Khong hop le");
+  }
+</script>
+</body>
+</html>

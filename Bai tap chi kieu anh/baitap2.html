@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="ngay" type="number" placeholder="Nhap so ngay cong o day">
+<select name="" id="bac">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+</select>
+<button onclick="tinh()">Tinh</button>
+<p id="tinh"></p>
+<script>
+    function tinh() {
+        let day = document.getElementById("ngay").value;
+        day = parseInt(day);
+        let bac=document.getElementById("bac").value;
+        switch (bac) {
+            case "A":
+                document.getElementById("tinh").innerText = "So tien luong la :" + 5000000 * day / 22;
+                break;
+            case "B":
+                document.getElementById("tinh").innerText = "So tien luong la :" + 6000000 * day / 23;
+                break;
+            case "C":
+                document.getElementById("tinh").innerText = "So tien luong la :" + 8000000 * day / 23;
+                break;
+            case "D":
+                document.getElementById("tinh").innerText = "So tien luong la :" + 10000000 * day / 23;
+                break;
+        }
+    }
+</script>
+</body>
+</html>
