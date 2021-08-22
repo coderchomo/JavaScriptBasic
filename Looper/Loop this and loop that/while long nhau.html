@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let eye,a,b;
+    eye="<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    a=b=1;
+    while(a<=10){
+        eye=eye+"<tr>";
+        while(b<=10){
+            eye=eye+"<td>"+a*b+"</td>";
+            b++;
+        }
+        eye=eye+"</tr>";
+        b=1;
+        a++;
+    }
+    eye=eye+"</table>";
+    document.write(eye);
+</script>
+</body>
+</html>
