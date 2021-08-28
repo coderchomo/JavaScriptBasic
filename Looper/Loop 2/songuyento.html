@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let quantity=prompt("So luong SNT");
+  quantity=parseInt(quantity);
+  // let N=2;
+  // N=parseInt(N);
+  // for(N=2;count<number;N++){
+  //     for(i=2,a=0;i<N;i++){
+  //         if(N%i===0){
+  //             a=1;
+  //             break;
+  //         }
+  //     }
+  //     if(a==0){
+  //         document.write(N+"<br>");
+  //         count+=1;
+  //     }
+  // }
+  function checkPrime(number){
+      if(number<2) return false;
+      if(number<4) return true;
+      for(let i=2;i<number;i++){
+          if(number%i==0) return false;
+      }return true;
+  }
+  let count=0;
+  // for(let count=0;count<quantity;count++){
+      for(let i=0;i<200;i++){
+          if(checkPrime(i)===true){
+              document.write(i+"<br>");
+              count++;
+          }if(count===quantity){
+              break;
+          }
+      // }
+  }
+</script>
+</body>
+</html>
